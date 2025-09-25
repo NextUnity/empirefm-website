@@ -19,8 +19,26 @@
 
   <section>
     <h1>Kontakt</h1>
-    <p>Fragen, Wünsche oder Feedback?</p>
-    <p>Email: <a href="mailto:info@edmfm.de">info@edmfm.de</a></p>
+    <p>Fragen, Wünsche oder Feedback? Nutze gerne das Formular:</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
+      <!-- Honeypot Feld für Spam-Schutz -->
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden">
+        <label>Wenn du ein Mensch bist, lasse dieses Feld leer: <input name="bot-field" /></label>
+      </p>
+
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-Mail*</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Nachricht*</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
   </section>
 
   <footer>

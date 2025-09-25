@@ -61,3 +61,62 @@ footer {
   background: #1f1f1f;
   color: #888;
 }
+
+
+/* Verstecktes Honeypot-Feld */
+.hidden {
+  display: none;
+}
+
+/* Kontaktformular Styling */
+
+.contact-form {
+  max-width: 600px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+  color: #00ffc3;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.8em;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: #f0f0f0;
+  resize: vertical;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background-color: #333;
+}
+
+.contact-form button {
+  margin-top: 1.5em;
+  padding: 0.8em;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #00ffc3;
+  border: none;
+  border-radius: 8px;
+  color: #121212;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00c89e;
+}
