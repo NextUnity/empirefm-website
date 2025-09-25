@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EdmFM - Über Uns</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -14,7 +15,13 @@
       <a href="about.html" class="active">Über Uns</a>
       <a href="program.html">Programm</a>
       <a href="contact.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="terms.html">AGB</a>
+      <a href="privacy.html">Datenschutz</a>
     </nav>
+    <div class="now-playing-header" style="color:#00ffc3; font-weight: 600; margin-left: auto;">
+      Jetzt läuft: <span id="current-song">Lade Titel...</span>
+    </div>
   </header>
 
   <section>
@@ -24,6 +31,16 @@
 
   <footer>
     <p>&copy; 2025 EdmFM – Alle Rechte vorbehalten.</p>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a> |
+      <a href="terms.html">AGB</a> |
+      <a href="privacy.html">Datenschutz</a>
+    </div>
   </footer>
+
+  <div id="cookie-banner" role="alert" aria-live="polite" aria-label="Cookie Hinweis">
+    <p>Wir verwenden Cookies, um das Nutzererlebnis zu verbessern und den Player zu ermöglichen. Mit Klick auf „Akzeptieren“ stimmst du zu.</p>
+    <button id="cookie-accept">Akzeptieren</button>
+  </div>
 </body>
 </html>
